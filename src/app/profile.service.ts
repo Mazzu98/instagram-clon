@@ -6,6 +6,6 @@ import { Profile } from './profile';
 })
 export class PorfileService {
 
-profile: Profile = new Profile('mazzu.j','Juan Mazzucchelli','./assets/images/porfile/jpg')
+profile: Profile = new Profile('mazzu.j','Juan Mazzucchelli','./assets/images/porfile.jpg')
 
 }
