@@ -1,0 +1,49 @@
+<div class="w-72 relative hidden lg:block">
+  <div class="w-72 fixed mt-6">
+    <div class="flex items-center">
+      <div class="w-12 h-12 rounded-full overflow-hidden">
+        <img class="w-full h-full object-cover object-center" src="{{profile.url}}" alt="">
+      </div>
+      <div class="ml-5 flex-grow">
+        <h1 class="text-sm font-semibold">{{profile.name}}</h1>
+        <h2 class="text-sm text-gray-500">{{profile.userName}}</h2>
+      </div>
+      <div>
+        <a class="text-xs text-blue-500 font-semibold cursor-pointer">Cambiar</a>
+      </div>
+    </div>
+    <div class="flex flex-col mt-6 gap-y-3">
+      <div class="flex justify-between">
+        <h1 class="text-sm text-gray-500 font-semibold">Sugerencias para ti</h1>
+        <a class="text-xs text-gray-900 font-semibold cursor-pointer">Ver todo</a>
+      </div>
+      <div *ngFor='let sugerido of sugeridos' class="flex items-center">
+        <div class="w-9 h-9 rounded-full overflow-hidden">
+          <img class="w-full h-full object-cover object-center" src="{{sugerido.url}}" alt="">
+        </div>
+        <div class="ml-5 flex-grow">
+          <h1 class="text-sm font-semibold">{{sugerido.userName}}</h1>
+          <h2 class="text-sm text-gray-500">{{sugerido.name}}</h2>
+        </div>
+        <div>
+          <a class="text-xs text-blue-500 font-semibold cursor-pointer">Seguir</a>
+        </div>
+      </div>
+    <div class="mt-10">
+      <p class="flex flex-wrap gap-x-0.5 text-gray-400 text-opacity-75 text-xs">
+        <a class="cursor-pointer">Información</a>&middot;
+        <a class="cursor-pointer"> Ayuda</a>&middot;
+        <a class="cursor-pointer">Prensa</a>&middot;
+        <a class="cursor-pointer">API</a>&middot;
+        <a class="cursor-pointer">Empleo</a>&middot;
+        <a class="cursor-pointer">Privacidad</a>&middot;
+        <a class="cursor-pointer">Condiciones</a>&middot;
+        <a class="cursor-pointer">Ubicaciones</a>&middot;
+        <a class="cursor-pointer">Cuentas destacadas</a>&middot;
+        <a class="cursor-pointer">Hashtags</a>
+      </p>
+      <p class="text-gray-400 text-opacity-75 text-xs mt-5">© 2021 INSTAGRAM FROM FACEBOOK</p>
+
+    </div>
+  </div>
+</div>
